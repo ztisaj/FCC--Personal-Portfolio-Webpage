@@ -1,24 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif; background-color: #080f31;
 }
 
 #navbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #76298c;
+    background-color: #000;
     height: 50px;
     width: 100%;
     position: fixed;
     align-items: center;
-    box-shadow: 0 2px 30px #aaa;
     z-index: 2;
 }
 
 .nav-link {
     color: #fff;
+    background-color: #000;
     text-decoration: none;
     margin: auto;
     font-size: 20px;
@@ -26,8 +26,7 @@
 }
 
 .nav-link:hover {
-    font-size: 22px;
-    opacity: 1;
+    font-weight: bolder;
 }
 
 /** welcome section **/
@@ -41,22 +40,11 @@
     width: 100vw;
 }
 
-#welcome-img {
-    height: 300px;
-    width: 300px;
-    margin: auto auto 5px;
-    border-radius: 50%;
-    border: #ccc solid 1px;
-    box-shadow: 2px 2px 20px #ddd;
-}
-
 h1 {
-    margin: 20px auto auto;
     font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 24px;
-    color: #555;
+    font-size: 35px;
+    color: #2196f3;
+    margin: auto;
 }
 
 /** projects section **/
@@ -66,33 +54,33 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100vh;
     width: 100vw;
-    box-shadow: 0 2px 20px #aaa;
     border-bottom: #aaa solid 0.5px;
+    background-color: #fff;
 }
 
 #proj-sec {
     display: flex;
-    flex-direction: row;
-    margin: 5% auto;
-    justify-content: center;
-    align-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
     width: 100%;
+    margin: auto;
+    background-color: #fff;
 }
 
 #p-proj {
     margin: 2vh auto 2%;
+    color: #000;
+    background-color: #fff;
 }
 
 .project-tile {
-    margin: auto;
-    height: 25vh;
-    width: 18vw;
     display: flex;
-    flex-direction: column;
+    width: 20%;
+    flex-flow: row wrap;
+    margin: 5%;
     border: #aaa solid 1px;
-    box-shadow: 5px 5px 20px #aaa;
 }
 
 .project-tile:hover {
@@ -100,8 +88,8 @@ h1 {
 }
 
 .img-proj {
-    height: 80%;
-    width: 100%;
+    max-height: auto;
+    max-width: 100%;
     border-bottom: #bbb solid 0.5px;
     opacity: 0.8;
     z-index: 1;
@@ -113,11 +101,13 @@ h1 {
 
 .proj-link {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: 300;
     align-self: center;
     font-size: 1.2vw;
     margin: auto;
+    height: 2.4vw;
+    line-height: 2.4vw;
 }
 
 /** contact section **/
@@ -138,7 +128,7 @@ p {
     letter-spacing: 1px;
     font-weight: 300;
     font-style: italic;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
 
@@ -156,18 +146,17 @@ p {
     height: 11vw;
     width: 11vw;
     margin: auto;
-    border: #ccc solid 1px;
+    border: #fff solid 1px;
     border-radius: 50%;
-    box-shadow: 3px 3px 10px #ddd;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .contact:hover {
-    border-color: #000;
+    border: solid 4px #fff;
 }
 
 #profile-link,
@@ -177,6 +166,9 @@ p {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    
 }
 
 #f-link {
@@ -189,12 +181,12 @@ p {
     width: 70%;
     margin: auto;
     align-self: center;
+    background-color: #fff;
 }
 
 footer {
     height: 10vh;
     width: 100%;
-    box-shadow: 0 -2px 30px #aaa;
     background-color: #000;
     color: #ddd;
     font-size: 14px;
@@ -222,7 +214,7 @@ footer {
     }
     
     h1 {
-        font-size: 20px;
+        font-size: 6vw;
         font-weight: 400;
     }
     
@@ -244,13 +236,20 @@ footer {
     
     .project-tile {
         margin: 20px auto;
-        height: 38vh;
-        width: 80vw;
+        height: 48vh;
+        width: 60vw;
+        display: flex;
+    }
+    
+    .img-proj {
+        width: 100%;
+        height: 90%;
     }
     
     .proj-link {
         font-size: 18px;
         font-weight: 400;
+        margin-bottom: 10px;
     }
     
     .p-con {
